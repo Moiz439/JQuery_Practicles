@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="images/M.jpg" width="300px"/>
+    <script src="JQuery/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $('#img1').hover(function1,function2);   // hover event work same as mouseenter & mouseleave event 
+            function function1()
+            {
+                $('#img1').css('width','500px');
+            }
+            function function2()
+            {
+                $('#img1').css('width','300px');
+            }
+        });
+    </script>
+</body>
+</html>

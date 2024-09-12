@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            opacity: 0.4;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animate Event</h1>
+    <button id="btn1">Animate</button><br><br>
+    <img src="images/M.jpg" id="img1" width="300px" height="300px"/>
+    <script src="JQuery/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#btn1").click(function(){
+                $("#img1").animate({
+                    left:'150px',
+                    width:'400px',
+                    height:'400px',
+                    opacity:'1'
+                },2000);
+            });
+        })
+        
+    </script>
+</body>
+</html>

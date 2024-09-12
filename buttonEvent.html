@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/M.jpg" width="300px" id="img1"/>
+    <button id="btn1" onclick="func1()">Click</button>
+    <script src="JQuery/jquery.js"></script>
+    <script>
+    ///////////This is Javascript Code.////////////////////
+        /*function func1()
+        {
+            document.getElementById('img1').style.width='500px';
+        }*/
+
+    ////////////This is JQuery Code./////////////////
+        /*$("button").click(fun1);
+        function fun1()
+        {
+            $('#img1').css('width','500px');
+        }*/
+
+    /////////This is anonimus Sunction is JQuery./////////
+       
+
+        $("document").ready(function(){
+           
+            $("button").click(function(){
+                $('#img1').css('width','500px');
+            });
+        });
+    </script>
+</body>
+</html>
